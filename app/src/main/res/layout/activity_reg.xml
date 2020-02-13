@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_2"
+    tools:context=".RegAct"
+    >
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+       android:layout_centerInParent="true"
+        android:layout_height="150dp">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+
+
+        android:src="@drawable/endlogo" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/buttons_layout"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="Login"
+android:textColor="#000"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="normal"
+            android:layout_marginBottom="8dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            />
+        <Button
+
+            android:id="@+id/button_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:background="@drawable/btn1"
+            android:text="Signup"
+            android:textColor="#000"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="336dp"
+        android:id="@+id/layout_main_card1"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rec_gradient"
+        android:layout_toRightOf="@id/buttons_layout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/layout01"
+            >
+            <TextView
+                android:textColor="#701f47"
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="Sign Up"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="64dp"
+                android:layout_marginBottom="30dp"
+                android:layout_height="500dp">
+
+              <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:id="@+id/fname_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Full Name" />
+
+                    <EditText
+                        android:id="@+id/fname"
+                        android:textColor="#CD4B4B"
+                        android:textSize="15sp"
+                        android:textColorHint="#808080"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Your Name" />
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:id="@+id/email_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Email" />
+
+                    <EditText
+                        android:textColor="#CD4B4B"
+                        android:textSize="15sp"
+                        android:id="@+id/email"
+                        android:textColorHint="#808080"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Your email ID" />
+
+                  <TextView
+                      android:textColor="#000"
+                        android:textSize="15sp"
+                        android:id="@+id/password_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Password" />
+
+                    <EditText
+                        android:textColor="#CD4B4B"
+                        android:textSize="15sp"
+                        android:id="@+id/password"
+                        android:textColorHint="#808080"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+
+                        android:fontFamily="@font/montserrat"
+                        android:hint=" * * * * * * * *"
+                        android:inputType="textPassword"
+                        />
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:id="@+id/branch_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Branch" />
+
+                  <EditText
+                      android:textColor="#CD4B4B"
+                        android:textSize="15sp"
+                        android:id="@+id/branch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                      android:textColorHint="#808080"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Your branch" />
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:id="@+id/year_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Year" />
+
+                    <EditText
+                        android:id="@+id/year"
+                        android:textColor="#CD4B4B"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:textColorHint="#808080"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="1,2,3,4" />
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:id="@+id/campus_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Campus ID" />
+
+                    <EditText
+                        android:id="@+id/campus"
+                        android:textColor="#CD4B4B"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:textColorHint="#808080"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Your Library ID"/>
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:id="@+id/cnumber_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Contact Number" />
+
+                    <EditText
+                        android:id="@+id/cnumber"
+                        android:textColor="#CD4B4B"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:hint="You will recieve an OTP"
+                        android:fontFamily="@font/montserrat"
+                        />
+
+
+                    <TextView
+                        android:textColor="#000"
+                        android:textSize="15sp"
+                        android:id="@+id/cname_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="College Name" />
+
+                    <EditText
+                        android:id="@+id/cname"
+                        android:textColor="#CD4B4B"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:fontFamily="@font/montserrat"
+                        android:hint="Your College" />
+
+                  <TextView
+                      android:textColor="#000"
+                      android:textSize="15sp"
+                      android:id="@+id/ambd_id_text"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="16dp"
+                      android:layout_marginTop="8dp"
+                      android:fontFamily="@font/montserrat"
+                      android:text="Ambassador ID" />
+
+                  <EditText
+                      android:id="@+id/ambd_id"
+                      android:textColor="#CD4B4B"
+                      android:textColorHint="#808080"
+                      android:textSize="15sp"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="8dp"
+                      android:layout_marginRight="8dp"
+                      android:fontFamily="@font/montserrat"
+                      android:hint="Optional" />
+
+
+
+
+                </LinearLayout>
+        
+
+
+            </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_main_card1"
+        android:layout_toRightOf="@id/buttons_layout"
+        android:layout_marginTop="-22dp"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:id="@+id/btnrequestotp"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:background="@drawable/buttonback"
+            android:text="     Register     "
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateDrawable="@drawable/cpb_4"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

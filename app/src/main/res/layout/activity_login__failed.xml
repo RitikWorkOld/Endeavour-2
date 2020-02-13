@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Failed"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/cross_btn_lf"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:elevation="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/cancel_rf_red"/>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorwhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:id="@+id/title_001"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorred"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:text="Login Failed"
+                    android:textAlignment="center"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottie_anim_rs"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_fileName="reg_failed.json"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorred"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="Please Try Again"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:elevation="10dp"
+                    android:id="@+id/login_btn_lf"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rec_gradient_red"
+                    android:text="   login   "
+                    android:textColor="@color/colorwhite"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

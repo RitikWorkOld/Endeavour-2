@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forgotpass_Success"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/cross_btn_fps"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:elevation="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/cancel_rs_green"/>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/colorwhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    android:id="@+id/title_001"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorgreen"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="Password Reset \nSuccessFull"
+                    android:textAlignment="center"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/lottie_anim_rs"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_fileName="check_your_email.json"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorgreen"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="Please check your mail\nand Login again"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/login_btn_fps"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rec_gradient_green"
+                    android:text="   Login   "
+                    android:textColor="@color/colorwhite"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

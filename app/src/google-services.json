@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "50592689934",
+    "firebase_url": "https://endeavour-cc11d.firebaseio.com",
+    "project_id": "endeavour-cc11d",
+    "storage_bucket": "endeavour-cc11d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50592689934:android:01bca17554a7c6c7f7715f",
+        "android_client_info": {
+          "package_name": "com.example.endeavour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50592689934-jhgq710cidajdmjgbkd620mdab5aoijb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.endeavour",
+            "certificate_hash": "5787bd431cb4e4168ae461cf0190cae81681eb8b"
+          }
+        },
+        {
+          "client_id": "50592689934-atvfao7rjod88prpk8fl4pm7skrl63hf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKBYcflO7R1MgVeHvbwEien0ETNkT4Q4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50592689934-atvfao7rjod88prpk8fl4pm7skrl63hf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

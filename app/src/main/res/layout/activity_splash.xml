@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/back_2"
+    android:orientation="vertical"
+
+    tools:context=".splashAct">
+
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/endlogo" />
+
+    <TextView
+        android:id="@+id/text_splash"
+        android:fontFamily="@font/nunito"
+        android:layout_marginBottom="60dp"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:text="Endeavour'20"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <!--Column 2:-->
+   <!--
+    <Button
+        android:id="@+id/btn_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/buttonback"
+        android:text="      Get Started     "
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        /> -->
+
+</RelativeLayout>
