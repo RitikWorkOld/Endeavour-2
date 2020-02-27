@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/top_bar_fr_bquiz_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/heading_title"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:text="Result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_below="@+id/heading_title"
+                    android:id="@+id/resultcount_bar"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/prev_btn"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/colorAccent"
+                            android:elevation="10dp"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Correct\nAnswers"
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:textColor="@color/colorAccent"
+                            android:id="@+id/correct_ans_count"
+                            android:textStyle="bold"
+                            android:textSize="30sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/next_btn"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Wrong\nAnswers"
+                            android:textSize="25sp"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:textColor="@color/colorAccent"
+                            android:id="@+id/wrong_answers_count"
+                            android:textStyle="bold"
+                            android:textSize="30sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:text="Total Score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:id="@+id/total_score_count"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:text="Total Questions\nAttempted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:id="@+id/total_ques_count"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:text="Questions Skipped"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/colorAccent"
+                android:id="@+id/skipped_ques_count"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:text="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:text="Results Will Be Declared Soon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/exitquizbtn"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorwhite"
+                android:text="EXIT"
+                android:background="@drawable/radio_flat_selected"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

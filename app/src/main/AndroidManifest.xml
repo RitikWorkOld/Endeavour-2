@@ -6,28 +6,31 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-
     <application
-        android:name="com.ritik.ecell.services.FirebasePersistence"
+        android:name=".services.FirebasePersistence"
         android:allowBackup="true"
         android:icon="@drawable/endlogo"
         android:label="@string/app_name"
         android:roundIcon="@drawable/endlogo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.ritik.ecell.Events_Fragments.EC_Teams"
-            android:theme="@style/AppTheme.Requeststyle"></activity>
+        <activity android:name=".FPL.Fpl_results"></activity>
+        <activity android:name=".FPL.FplMain" />
+        <activity android:name=".FPL.Fpl_main_intro" />
         <activity
-            android:name="com.ritik.ecell.Pay_Success"
+            android:name=".Events_Fragments.EC_Teams"
             android:theme="@style/AppTheme.Requeststyle" />
-        <activity android:name="com.ritik.ecell.glipm_detail" />
-        <activity android:name="com.ritik.ecell.BQuiz.bquiz_results" />
-        <activity android:name="com.ritik.ecell.BQuiz.bquiz_intro" />
         <activity
-            android:name="com.ritik.ecell.Voting.VotingAct"
+            android:name=".Pay_Success"
+            android:theme="@style/AppTheme.Requeststyle" />
+        <activity android:name=".glipm_detail" />
+        <activity android:name=".BQuiz.bquiz_results" />
+        <activity android:name=".BQuiz.bquiz_intro" />
+        <activity
+            android:name=".Voting.VotingAct"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ritik.ecell.splashAct"
+            android:name=".splashAct"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,69 +38,69 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.ritik.ecell.checksum" />
+        <activity android:name=".checksum" />
         <activity
-            android:name="com.ritik.ecell.about_endeavour"
+            android:name=".about_endeavour"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ritik.ecell.FAQ"
+            android:name=".FAQ"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ritik.ecell.Developer"
+            android:name=".Developer"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ritik.ecell.Shedule.Shedule"
+            android:name=".Shedule.Shedule"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ritik.ecell.Speakers.Speakers"
+            android:name=".Speakers.Speakers"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ritik.ecell.Sponsors.Sponsor"
+            android:name=".Sponsors.Sponsor"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ritik.ecell.RequestOtp"
+            android:name=".RequestOtp"
             android:theme="@style/AppTheme.Requeststyle" />
         <activity
-            android:name="com.ritik.ecell.Forgotpass_Success"
+            android:name=".Forgotpass_Success"
             android:theme="@style/AppTheme.Popupstyle" />
         <activity
-            android:name="com.ritik.ecell.Login_Failed"
+            android:name=".Login_Failed"
             android:theme="@style/AppTheme.Popupstyle" />
         <activity
-            android:name="com.ritik.ecell.Reg_Fail"
+            android:name=".Reg_Fail"
             android:theme="@style/AppTheme.Popupstyle" />
         <activity
-            android:name="com.ritik.ecell.Reg_Sucess"
+            android:name=".Reg_Sucess"
             android:theme="@style/AppTheme.Popupstyle" />
         <activity
-            android:name="com.ritik.ecell.Team.TeamMain"
+            android:name=".Team.TeamMain"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ritik.ecell.RegAct"
+            android:name=".RegAct"
             android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ritik.ecell.LoginActivity"
+            android:name=".LoginActivity"
             android:noHistory="true"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ritik.ecell.Dashboard"
+            android:name=".Dashboard"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ritik.ecell.Events_Fragments.EventsMain"
+            android:name=".Events_Fragments.EventsMain"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ritik.ecell.ForgotPass"
+            android:name=".ForgotPass"
             android:theme="@style/AppTheme.Requeststyle" />
         <activity
-            android:name="com.ritik.ecell.Notifications.Notifications"
+            android:name=".Notifications.Notifications"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.ritik.ecell.BQuiz.Bquiz"
+            android:name=".BQuiz.Bquiz"
             android:screenOrientation="portrait" />
 
         <service
-            android:name="com.ritik.ecell.services.MyMessagingService"
+            android:name=".services.MyMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

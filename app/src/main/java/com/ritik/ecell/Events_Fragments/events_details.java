@@ -23,6 +23,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ritik.ecell.BQuiz.bquiz_intro;
+import com.ritik.ecell.FPL.Fpl_main_intro;
 import com.ritik.ecell.R;
 import com.ritik.ecell.Voting.VotingAct;
 import com.ritik.ecell.Voting.Voting_helper;
@@ -47,6 +48,7 @@ public class events_details extends Fragment {
     TextView readless;
     Button gotoquiz;
     Button votenow;
+    Button fplquiz;
     TextView faq;
 
     @Nullable
@@ -76,6 +78,7 @@ public class events_details extends Fragment {
         votenow = view.findViewById(R.id.votenow);
         faq = view.findViewById( R.id.faq_btn );
         registered = view.findViewById(R.id.registered);
+        fplquiz = view.findViewById(R.id.fpl_quiz_btn);
 
         Title_dt.setText(Title);
         Descp_dt.setText(Descp);
@@ -136,6 +139,39 @@ public class events_details extends Fragment {
 
             }
         } );
+
+        final DatabaseReference databaseReferencefpl = FirebaseDatabase.getInstance().getReference().child("FplStatus").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+        databaseReferencefpl.keepSynced(true);
+        databaseReferencefpl.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                QuizUnlocker quizUnlocker = dataSnapshot.getValue(QuizUnlocker.class);
+
+                if (quizUnlocker != null){
+                    if (quizUnlocker.getStatus().equals("open") && faqid.equals("7")){
+                        fplquiz.setVisibility(View.VISIBLE);
+                        fplquiz.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent intent = new Intent( getActivity(), Fpl_main_intro.class );
+                                startActivity( intent );
+                            }
+                        });
+                    }
+                    else {
+                        fplquiz.setVisibility(View.GONE);
+                    }
+                }
+                else {
+                    fplquiz.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
 
         DatabaseReference databaseReference1 = FirebaseDatabase.getInstance().getReference().child( "VotingControl" );
         databaseReference1.keepSynced( true );
