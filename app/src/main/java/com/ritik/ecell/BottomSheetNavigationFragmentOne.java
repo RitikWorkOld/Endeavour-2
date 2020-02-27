@@ -72,7 +72,7 @@ public class BottomSheetNavigationFragmentOne extends BottomSheetDialogFragment 
             public void onClick(View arg0) {
                 Intent viewIntent =
                         new Intent("android.intent.action.VIEW",
-                                Uri.parse("http://www.linkedin.com/"));
+                                Uri.parse("https://www.linkedin.com/company/e-cell-kiet/"));
                 startActivity(viewIntent);
             }
         });
@@ -104,7 +104,7 @@ public class BottomSheetNavigationFragmentOne extends BottomSheetDialogFragment 
             public void onClick(View arg0) {
                 Intent viewIntent =
                         new Intent("android.intent.action.VIEW",
-                                Uri.parse("http://www.youtube.com/"));
+                                Uri.parse("https://www.youtube.com/channel/UCtnkeQnhcAGS_AWKgYUicEA"));
                 startActivity(viewIntent);
             }
         });

@@ -239,19 +239,9 @@ public class events_details extends Fragment {
                         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                         builder.setTitle("Memethon");
                         builder.setIcon(R.drawable.endlogo);
-                        builder.setMessage("Please confirm your Enrollment")
+                        builder.setMessage("Registeration is closed")
                                 .setCancelable(false)
-                                .setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
-                                    @Override
-                                    public void onClick(DialogInterface dialog, int which) {
-                                        DatabaseReference databaseReference2 = FirebaseDatabase.getInstance().getReference().child("registrations").child(faqid).child(FirebaseAuth.getInstance().getCurrentUser().getUid());
-                                        databaseReference2.child("userid").setValue(FirebaseAuth.getInstance().getCurrentUser().getUid());
-                                        databaseReference2.keepSynced(true);
-                                        Register_dt.setVisibility(View.GONE);
-                                        registered.setVisibility(View.VISIBLE);
-                                    }
-                                })
-                                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                                .setNegativeButton("OK", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
 

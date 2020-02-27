@@ -121,7 +121,7 @@ public class fr_bquiz_ques20 extends Fragment {
 
                     AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
                     builder.setTitle("Bquiz");
-                    builder.setIcon(R.drawable.endlogo);
+                  //  builder.setIcon(R.drawable.endlogo);
                     builder.setMessage("Please Confirm Your Options\nYou can not change your Options once confirmed")
                             .setCancelable(false)
                             .setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
